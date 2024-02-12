@@ -4,10 +4,10 @@ A page with a clock, weather forecast and stopwatch. The website uses API to dow
 
 ## api 
 
--- current time: 
--- weather: 
+-- current time: http://worldtimeapi.org <br>
+-- weather: https://api.openweathermap.org
 
 ## tech
 
--- HTML, CSS
+-- HTML, CSS <br>
 -- JavaScript

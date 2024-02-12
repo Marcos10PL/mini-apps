@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata&display=swap');
+
+:root
+{
+    --text: #d4d3d3;
+    --primary: #0000002a;
+    --secondary: #04334e;
+}
+
+*
+{
+    -webkit-user-select: none;
+    -moz-user-select: none; 
+    user-select: none;
+    font-family: 'Inconsolata', monospace;
+}
+
+body
+{
+    text-align: center;
+    font-size: 24px;
+    background-color: #1f1f1f;
+    background: linear-gradient(233deg, #323333fa, #02121bfd);
+    margin-top: 30px;
+    color: var(--text);
+}
+
+body.day
+{
+    background-color: #1f1f1f;
+    background: linear-gradient(233deg, #c9e7e6fa, #707070fd);
+    --text: #282929;
+}
+
+header
+{
+    max-width: 600px;
+    margin: 0 auto 30px auto;
+    padding-right: 10px;
+    text-align: right;
+}
+
+header > i
+{
+    cursor: pointer;
+    width: 27px;
+    background: transparent;
+}
+
+header > i:hover
+{
+    filter: drop-shadow(0px 0px 8px #888);
+}
+
+main
+{
+    max-width: 600px;
+    margin: auto;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+main > div
+{
+    background: var(--primary);
+    flex-basis: calc(50% - 20px);
+    min-width: 285px;
+    box-sizing: border-box;
+    aspect-ratio: 1 / .5;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+footer
+{
+    margin-top: 20px;
+    font-size: 1.2rem;
+    filter: brightness(0.6);
+}
+
+@media (width < 606px) 
+{
+    header
+    {
+        text-align: center;
+        padding-bottom: 30px;
+    }
+    
+    .stopwatch
+    {
+        border-radius: 20px;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+}
+
+.clock .time { font-size: 3rem; }

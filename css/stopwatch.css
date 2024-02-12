@@ -1,0 +1,74 @@
+/* stopwatch */
+
+.stopwatch
+{
+    flex-direction: row;
+    column-gap: 15px;
+    font-size: 2rem;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    border: 2px solid var(--primary);
+}
+
+.stopwatch > div
+{
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.stopwatch > button
+{
+    border: 2px solid var(--secondary);
+    background-color: var(--primary);
+    border-radius: 10px;
+    font-size: 1.3rem;
+    padding: 5px;
+    width: 100px;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: filter .1s ease-in-out;
+    color: inherit;
+}
+
+.stopwatch > button:hover
+{
+    filter: brightness(1.7);
+}
+
+/* measurements list */
+
+.list
+{
+    border: 2px solid var(--primary);
+    overflow-y: scroll;
+    border-radius: 0;
+}
+
+.list::-webkit-scrollbar
+{
+    background-color: var(--primary);
+}
+
+.list::-webkit-scrollbar-thumb
+{
+    background-color: var(--primary);
+    border: 1px solid var(--secondary);
+}
+
+.list table
+{
+    font-size: inherit;
+    border-spacing: 5px;
+}
+
+.list table > thead > tr:first-child > td
+{
+    border-bottom: 1px solid var(--text);
+    text-align: center;
+    padding-bottom: 5px;
+}
+
+.list table > tbody > tr > td
+{
+    padding: 0 15px;
+}

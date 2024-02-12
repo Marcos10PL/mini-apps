@@ -1,0 +1,70 @@
+<html lang="pl">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Marek Kramarczyk">
+    <title>Stoper</title>
+
+    <script src="https://kit.fontawesome.com/9e75794b11.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/weather.css">
+    <link rel="stylesheet" href="./css/stopwatch.css">
+
+</head>
+
+<body>
+    
+    <header>
+        <i class="fa-solid fa-toggle-off"></i>
+        <i class="fa-solid fa-volume-high"></i>
+    </header>
+
+   <main>
+       <div class="weather">
+            <div class="search-bar">
+               <input type="search" placeholder="Podaj miejscowość...">
+               <button><i class="fa-solid fa-magnifying-glass"></i></button>
+            </div>
+            <div class="cloud">Wpisz miejscowość aby wyświetlić pogodę</div>
+            <div class="temperature"></div>
+       </div>
+        <div class="clock">
+            <div class="time"></div>
+            <div class="date">Ładowanie...</div>
+        </div>
+        <div class="stopwatch">
+            <div class="time">00:00:00:00</div>
+            <button class="start">start</button>
+            <button class="reset">pomiar</button>
+        </div>
+        <div class="list">
+            <table>
+                <thead>
+                    <tr>
+                        <td>lp.</td>
+                        <td>czas</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>01</td>
+                        <td>-- -- -- --</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+   </main>
+
+   <footer>
+        2024 &copy; Wszelkie prawa zastrzeżone
+   </footer>
+
+   <script src="./js/clock.js"></script>
+   <script src="./js/weather.js"></script>
+   <script src="./js/stopwatch.js"></script>
+
+</body>
+</html>

@@ -10,5 +10,4 @@ The website uses API to download the current time and weather.
 
 ## tech
 
--- HTML, CSS <br>
--- JavaScript
+-- Vanilla JavaScript

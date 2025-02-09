@@ -5,7 +5,6 @@ The website uses API to download the current time and weather.
 
 ## api 
 
--- current time: http://worldtimeapi.org <br>
 -- weather: https://api.openweathermap.org
 
 ## tech
